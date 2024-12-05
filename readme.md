@@ -3,7 +3,8 @@
 The objective of this service is to validate if a client exists and is active, to determine if it has contracted phishing detection to indicate that it is available.
 The solution is based in request reply using rabbitMQ:
 
-![AppGate-Página-16 drawio](https://github.com/user-attachments/assets/a30aa40e-d47f-4bf2-b53e-ccaab89cdd63)
+![image](https://github.com/user-attachments/assets/8b83cf7b-0d9b-4efd-aaf5-04286e479e8d)
+
 
 
 
