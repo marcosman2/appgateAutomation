@@ -25,6 +25,11 @@ jobs:
           java-version: '17'
           cache: maven
 
+      - name: Install dos2unix
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dos2unix
+
       - name: Convert file to Unix line endings
         run: dos2unix deployment/rabbitmq/init.sh
 
