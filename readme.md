@@ -69,3 +69,13 @@ result:
     | 4|CUSTOMER4|false |false             |
     +--+---------+------+------------------+
 ```
+
+### Automation Test
+
+For run the automation suite on your local, follow these steps:
+```
+Clone the repository.
+Create a global environment variable, with name: RABBIT_PWD and value: the password of the RabbitMQ user.
+Go to the root of the project and run the testng.xml file.
+```
+This will run all scenarios automated on Messages.feature, and a html report will be generated on target/Customer-Availability.html
