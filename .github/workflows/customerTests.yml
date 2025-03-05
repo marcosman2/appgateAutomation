@@ -16,10 +16,10 @@ jobs:
       RABBIT_PWD: ${{ secrets.RABBIT_PWD }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v2
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -29,7 +29,7 @@ jobs:
         run: mvn clean test
 
       - name: Upload Customer-Availability Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: Customer-Availability-Report
           path: target/Customer-Availability.html
