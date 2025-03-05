@@ -11,7 +11,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
+    environment: QA
+    env:
+      RABBIT_PWD: ${{ secrets.RABBIT_PWD }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
