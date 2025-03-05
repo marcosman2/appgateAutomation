@@ -28,8 +28,8 @@ jobs:
       - name: Build and Run Tests
         run: mvn clean test
 
-      - name: Upload Customer-Availability Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: Customer-Availability-Report
-          path: target/Customer-Availability.html
+      #- name: Upload Customer-Availability Report
+       # uses: actions/upload-artifact@v3
+        #with:
+         # name: Customer-Availability-Report
+          #path: target/Customer-Availability.html
