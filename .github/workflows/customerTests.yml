@@ -25,6 +25,9 @@ jobs:
           java-version: '17'
           cache: maven
 
+      - name: Convert file to Unix line endings
+        run: dos2unix deployment/rabbitmq/init.sh
+
       - name: Build and Run Tests
         run: mvn clean test "-DsuiteXmlFile=testng.xml"
 
